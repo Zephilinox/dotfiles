@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Reset
+Color_Off='\e[0m'       # Text Reset
+
+# Regular Colors
+Black='\e[0;30m'        # Black
+Red='\e[0;31m'          # Red
+Green='\e[0;32m'        # Green
+Yellow='\e[0;33m'       # Yellow
+Blue='\e[0;34m'         # Blue
+Purple='\e[0;35m'       # Purple
+Cyan='\e[0;36m'         # Cyan
+White='\e[0;37m'        # White
+
+echo -e ${Red}"Gathering dotfiles..."${Color_Off}
+
+HOME="/home/zephilinox"
+
+DOTFILES="${HOME}/.vimrc ${HOME}/.i3/config ${HOME}/dotfiles"
+
+for file in ${DOTFILES}
+do
+	echo -e ${Red}\ \ \ \ ${file}${Color_Off}
+	cp --parents ${file} ${HOME}/git/dotfiles/
+done
+
+echo -e ${Cyan}"Adding dotfiles"${Color_Off}
+
+cd ${HOME}/git/dotfiles
+
+git add --all *
+git add --all *.*
+
+echo -e ${Yellow}"Commiting dotfiles"${Color_Off}
+
+DATE=$(date +'%Y-%m-%d @ %H:%M:%S')
+git commit -m "${DATE}"
+
+echo -e ${Green}"Pushing dotfiles"${Color_Off}
+
+git push
+
+echo -e ${Purple}"Success"
+echo -e ${Color_Off}
