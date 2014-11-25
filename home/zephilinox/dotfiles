@@ -19,10 +19,18 @@ HOME="/home/zephilinox"
 
 DOTFILES="${HOME}/.vimrc ${HOME}/.i3/config ${HOME}/dotfiles ${HOME}/.Xdefaults ${HOME}/.bashrc ${HOME}/.compton.conf ${HOME}/.i3status.conf ${HOME}/.tmux.conf ${HOME}/.xinitrc ${HOME}/.config/terminator/config ${HOME}/.i3/config /etc/profile /etc/modprobe.d/modprobe.conf /root/.bashrc"
 
+DOTFOLDERS="${HOME}/.vim/"
+
 for file in ${DOTFILES}
 do
-	echo -e ${Red}\ \ \ \ ${file}${Color_Off}
+	echo -e ${Red}\ \ \ \ [FILE] ${file}${Color_Off}
 	cp --parents ${file} ${HOME}/git/dotfiles/
+done
+
+for folder in ${DOTFOLDERS}
+do
+	echo -e ${Red}\ \ \ \ [FOLDER] ${folder}${Color_Off}
+	cp --parents -r ${folder} ${HOME}/git/dotfiles/
 done
 
 echo -e ${Cyan}"Adding dotfiles"${Color_Off}
