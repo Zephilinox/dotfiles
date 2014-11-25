@@ -73,6 +73,7 @@ if [ "$color_prompt" = yes ]; then
     fi
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='failed'
 fi
 
 trap 'echo -ne "\e[0m"' DEBUG
