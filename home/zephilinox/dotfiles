@@ -30,6 +30,7 @@ done
 for folder in ${DOTFOLDERS}
 do
 	echo -e ${Red}\ \ \ \ [FOLDER] ${folder}${Color_Off}
+	mkdir ${HOME}/git/dotfiles/${folder}
 	cp --parents -r ${folder} ${HOME}/git/dotfiles/
 done
 
