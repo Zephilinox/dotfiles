@@ -1,7 +1,7 @@
 sw_volume: 50
 audio_device_state:1:My ALSA Device
 state: play
-current: 2
+current: 1
 time: 119.989000
 random: 1
 repeat: 0
