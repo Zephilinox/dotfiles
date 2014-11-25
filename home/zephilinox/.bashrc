@@ -11,7 +11,11 @@ case $- in
       *) return;;
 esac
 
+# Force 256 color support
 TERM=xterm-256color
+
+# Aliases
+alias suvim="sudo -E vim"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

@@ -32,3 +32,5 @@ xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
 XTerm*terminator: xterm-256color
 XTerm*xterm: xterm-256color
 XTerm*termName: xterm-256color
+Xterm*locale: true
+XTerm*metaSendsEscape: true
