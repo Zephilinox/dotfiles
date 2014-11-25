@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Start auto
 exec terminator
-exec feh --bg-scale ~/background.jpg
+exec_always feh --bg-scale ~/background.jpg
 #exec_always compton --config ~/.compton.conf
 
 # Gaps Patch
@@ -160,9 +160,9 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	colors {
-		background #111111
-		statusline #ffa400
-		separator  #ffa400
+		background	 #111111
+		statusline	 #ffa400
+		separator	 #ffa400
 		
 		focused_workspace	#111111		#0f0f0f		#ffa400
 		active_workspace	#111111		#0f0f0f		#ffa400
@@ -170,7 +170,10 @@ bar {
 		urgent_workspace	#111111		#ffa400		#111111
 	}
 
-        status_command i3status
+        #status_command i3status
+        status_command		i3status | python ~/.i3pystatus.py
+	position		bottom
+	workspace_buttons	yes	
 }
 
 # class				border		backgr		text		indicator

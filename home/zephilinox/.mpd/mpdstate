@@ -1,0 +1,50 @@
+sw_volume: 50
+audio_device_state:1:My ALSA Device
+state: play
+current: 2
+time: 119.989000
+random: 1
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:❋Nightcore - My Bloody Valentine  ❋.mp3
+1:Nightcore - Hero of War.mp3
+2:Nightcore - Human.mp3
+3:Nightcore - I Can't Stay Away.mp3
+4:Nightcore - I'm Dreaming.mp3
+5:Nightcore - Inside Out.mp3
+6:Nightcore - Like A Lady.mp3
+7:Nightcore - Pyromania (Negative).mp3
+8:Nightcore - Timber (Blue).mp3
+9:Nightcore - Untouched.mp3
+10:Nightcore - We Can't Stop.mp3
+11:Nightcore - Your Love Is My Drug.mp3
+12:Nightcore ~ He Likes Boys.mp3
+13:Nightcore Face Down.mp3
+14:Nightcore- Do You Remember.mp3
+15:Nightcore- Invisible.mp3
+16:Nightcore- Never had a dream come true.mp3
+17:Nightcore- Storytime.mp3
+18:❋Nightcore - My Bloody Valentine  ❋.mp3
+19:Nightcore - Hero of War.mp3
+20:Nightcore - Human.mp3
+21:Nightcore - I Can't Stay Away.mp3
+22:Nightcore - I'm Dreaming.mp3
+23:Nightcore - Inside Out.mp3
+24:Nightcore - Like A Lady.mp3
+25:Nightcore - Pyromania (Negative).mp3
+26:Nightcore - Timber (Blue).mp3
+27:Nightcore - Untouched.mp3
+28:Nightcore - We Can't Stop.mp3
+29:Nightcore - Your Love Is My Drug.mp3
+30:Nightcore ~ He Likes Boys.mp3
+31:Nightcore Face Down.mp3
+32:Nightcore- Do You Remember.mp3
+33:Nightcore- Invisible.mp3
+34:Nightcore- Never had a dream come true.mp3
+35:Nightcore- Storytime.mp3
+playlist_end
