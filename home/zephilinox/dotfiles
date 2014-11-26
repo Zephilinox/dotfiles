@@ -17,9 +17,9 @@ echo -e ${Red}"Gathering dotfiles..."${Color_Off}
 
 HOME="/home/zephilinox"
 
-DOTFILES="${HOME}/.vimrc ${HOME}/dotfiles ${HOME}/.Xdefaults ${HOME}/.bashrc ${HOME}/.compton.conf ${HOME}/.i3status.conf ${HOME}/.tmux.conf ${HOME}/.xinitrc ${HOME}/.config/terminator/config ${HOME}/.i3/config /etc/profile /etc/modprobe.d/modprobe.conf /root/.bashrc ${HOME}/.i3pystatus.py"
+DOTFILES="${HOME}/.vimrc ${HOME}/dotfiles ${HOME}/.Xdefaults ${HOME}/.bashrc ${HOME}/.compton.conf ${HOME}/.i3status.conf ${HOME}/.tmux.conf ${HOME}/.xinitrc ${HOME}/.config/terminator/config ${HOME}/.i3/config /etc/profile /etc/modprobe.d/modprobe.conf /root/.bashrc ${HOME}/.i3pystatus.py ${HOME}/.i3blocks.conf"
 
-DOTFOLDERS="${HOME}/.vim/ ${HOME}/.mpd/ ${HOME}/.config/"
+DOTFOLDERS="${HOME}/.vim/ ${HOME}/.mpd/"
 
 for file in ${DOTFILES}
 do
