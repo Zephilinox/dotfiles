@@ -170,10 +170,12 @@ bar {
 		urgent_workspace	#111111		#ffa400		#111111
 	}
 
-        #status_command i3status
-        status_command		i3status | python ~/.i3pystatus.py
-	position		bottom
-	workspace_buttons	yes	
+        #status_command 	i3status
+        #status_command		i3status | python ~/.i3pystatus.py
+	status_command		i3blocks
+
+	#position		bottom
+	#workspace_buttons	yes	
 }
 
 # class				border		backgr		text		indicator
