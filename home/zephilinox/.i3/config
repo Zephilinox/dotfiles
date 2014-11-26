@@ -156,6 +156,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# mpc
+bindsym $mod+KP_Home exec mpc play
+bindsym $mod+KP_End exec mpc pause
+bindsym $mod+KP_Up exec mpc volume +5
+bindsym $mod+KP_Down exec mpc volume -5
+bindsym $mod+KP_Insert exec amixer set Master 1+ toggle
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
